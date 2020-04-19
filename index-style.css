@@ -1,0 +1,9 @@
+.container{
+    max-width: 700px;
+    margin:auto;
+}
+
+h1 {
+    border-bottom: 2px solid rgba(213,214,210,0.7)  ;
+    padding-bottom: 5px;
+}
