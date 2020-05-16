@@ -10,6 +10,7 @@
     box-shadow: 1px 1px 5px 1px #dadada;
     padding: 10px;
     margin-bottom: 20px;
+    background-color: #fff;
 }
 
 .post_header{
@@ -21,6 +22,7 @@
 
 .post_title{
     font-size: 20px;
+    cursor: pointer;
 }
 
 .post_container{
@@ -43,13 +45,16 @@
 }
 
 .create_post button{
-    height: 30px;
+    height: 40px;
     /*color: #f2f3f4;*/
     /*background-color: #3a5199;*/
-    background-color: #fff;
+
+    background-color: #3a5199;
+    color:#f2f3f4;
+    /*background-color: #fff;*/
 
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     font-weight: 500;
     font-size: 16px;
 
@@ -74,6 +79,101 @@
 .create_post button:focus{
     border: none;
     outline: none;
+}
+.form-post{
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px #dadada;
+    padding: 30px 15px 30px 15px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+
+.form-post-cell {
+    display: flex;
+    flex-direction: column;
+    /*margin-top: 10px;*/
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.form-post-cell input,
+.form-post-cell textarea{
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+    border: 1px solid #64b5f6 ;
+    border-radius: 5px;
+}
+.form-post-cell input:focus,
+.form-post-cell textarea:focus{
+    outline: none;
+    border: 1px solid #2286c3 ;
+}
+
+.form-post-cell label {
+    color: #999;
+    font-size: 18px;
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    top: 9px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.form-post-cell input:focus ~ label,
+.form-post-cell input:valid ~ label,
+.form-post-cell textarea:focus ~ label,
+.form-post-cell textarea:valid ~ label
+{
+    top: -21px;
+    font-size: 14px;
+    color: #2286c3;
+}
+
+
+textarea{
+    resize: vertical;
+}
+.form-post_btn__delete,
+.form-post_btn__success,
+.form-post_btn__cancel{
+    height: 40px;
+    background-color: #3a5199;
+    color:#f2f3f4;
+
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+
+    box-shadow: 1px 1px 5px 1px #dadada;
+    /*padding: 10px;*/
+    padding-left: 30px ;
+    padding-right: 30px;
+}
+
+.form-post_btn__delete{
+    background-color: #d32f2f;
+
+}
+
+.form-post_btn__success:focus,
+.form-post_btn__cancel:focus{
+    border: none;
+    outline: none;
+}
+
+.form-post_btn__success:hover,
+.form-post_btn__cancel:hover{
+    cursor: pointer;
+}
+
+.form-post-btn{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 

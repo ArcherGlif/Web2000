@@ -27,6 +27,11 @@ body{
     color: #ffffff ;
     font-weight: 600;
 }
+.header a.active{
+    border-bottom: 4px solid #d5d6d2;
+    transition: linear 0.2s;
+}
+
 
 .header a:hover {
     border-bottom: 4px solid #d5d6d2;
